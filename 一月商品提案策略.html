@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>《一月煥新・規劃與獻禮》TSUTAYA BOOKSTORE 1月商品提案策略</title>
+
+    <!-- 載入範例中指定的字體：Lato, Montserrat, Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* * 視覺指引來自《冬日光景》簡報
+         * ----------------------------------------
+         * 主題氛圍：規劃 × 獻禮
+         * 主色：霧藍灰 #C8D3DC
+         * 輔色：暖白 #FAF8F3
+         * 輔色：淺金 #EAD7A4
+         * 文字色：墨灰 #4A4A4A
+         * 字體：Montserrat / Lato, Noto Sans TC
+         */ /*... (CSS 樣式保持不變) ...*/
+
+      body {
+        font-family: "Lato", "Noto Sans TC", "思源黑體", "微軟正黑體",
+          sans-serif;
+        background-color: #faf8f3; /* 輔色：暖白 */
+        color: #4a4a4a; /* 文字色：墨灰 */
+        line-height: 1.7;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 2.5rem;
+        background-color: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 2px solid #ead7a4; /* 輔色：淺金 */
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        /* 主標題樣式 */
+        font-family: "Montserrat", "Noto Sans TC", sans-serif;
+        font-size: 2.25rem;
+        color: #4a4a4a;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-family: "Montserrat", "Noto Sans TC", sans-serif;
+        font-size: 1.75rem;
+        color: #4a4a4a;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-family: "Montserrat", "Noto Sans TC", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        background-color: #c8d3dc; /* 主色：霧藍灰 */
+        color: #4a4a4a;
+        padding: 1rem 1.5rem;
+        margin: 0;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        color: #4a4a4a;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.25rem;
+      }
+
+      .meta-info {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .meta-info p {
+        font-size: 1.1rem;
+        margin: 0.25rem 0;
+      }
+
+      /* 核心概念與時程安排 */
+      .intro {
+        font-size: 1.1rem;
+        /* 將文字靠左對齊，以配合條列式分段 */
+        text-align: left;
+        background-color: #faf8f3; /* 輔色：暖白 */
+        padding: 1.5rem 2rem; /* 增加左右間距 */
+        border-radius: 4px;
+        margin-bottom: 2.5rem;
+        border: 1px dashed #ead7a4;
+      }
+
+      /* 條列式樣式，移除編號 */
+      .intro ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .intro li {
+        margin-bottom: 1rem;
+        padding-left: 0; /* 移除原本為編號預留的空間 */
+        position: relative;
+      }
+
+      /* 移除 ::before 偽元素，即移除數字編號 */
+      .intro li::before {
+        content: "";
+      }
+
+      .intro li:nth-child(2)::before {
+        content: "";
+      }
+
+      .target-audience {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+        border: 1px solid #c8d3dc;
+        border-radius: 4px;
+      }
+
+      .target-card {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-left: 5px solid #ead7a4;
+        border-radius: 4px;
+      }
+
+      .themes-grid {
+        /* 調整為單欄佈局 */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .theme-card {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .theme-card:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .theme-content {
+        padding: 1.5rem;
+      }
+
+      .theme-card p.strategy {
+        font-weight: 600;
+        margin-top: 0;
+        padding-left: 0.75rem;
+        border-left: 3px solid #c8d3dc; /* 主色：霧藍灰 */
+        font-size: 0.95rem;
+      }
+
+      .theme-card ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .theme-card li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .theme-card li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #ead7a4; /* 輔色：淺金 */
+        font-size: 1.2rem;
+        line-height: 1.1;
+      }
+
+      /* 響應式設計：在小螢幕上變為單欄（此處 .themes-grid 變為冗餘，但保留 .target-audience） */
+      @media (max-width: 768px) {
+        .themes-grid,
+        .target-audience {
+          grid-template-columns: 1fr;
+        }
+        .container {
+          padding: 1.5rem;
+          margin: 1rem;
+        }
+        h1 {
+          font-size: 1.75rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* 列印樣式優化：進一步壓縮空間 */
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+          /* 使用更小的字體來壓縮內容 */
+          font-size: 9pt !important;
+          line-height: 1.3 !important; /* 縮小行距 */
+        }
+
+        .container {
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0.3cm !important; /* 極小化列印邊距 */
+          box-shadow: none !important;
+          border: none !important;
+        }
+
+        /* 調整標題大小 */
+        h1 {
+          font-size: 13pt !important;
+          margin-bottom: 0.3cm !important;
+        }
+
+        h2 {
+          font-size: 11pt !important;
+        }
+
+        h3 {
+          font-size: 10pt !important;
+          padding: 0.4rem 0.8rem !important; /* 縮小標題區塊內邊距 */
+        }
+
+        h4 {
+          font-size: 9pt !important;
+          margin-top: 0.4rem !important;
+          margin-bottom: 0.2rem !important;
+        }
+
+        /* 內容區塊間距 */
+        .meta-info,
+        .target-audience,
+        .intro {
+          margin-bottom: 0.4cm !important; /* 減少區塊間距 */
+          padding: 0.1cm 0.4cm !important;
+          /* 確保 intro 區塊內的行距也緊密 */
+          line-height: 1.3 !important;
+        }
+
+        .theme-content {
+          padding: 0.8rem !important; /* 縮小主題卡片內容區內邊距 */
+        }
+
+        /* 商品列表行距 */
+        .theme-card li {
+          margin-bottom: 0.1rem !important;
+          line-height: 1.3 !important;
+        }
+
+        .theme-card ul {
+          margin-bottom: 0.4rem !important; /* 減少列表底部間距 */
+        }
+
+        .themes-grid {
+          gap: 1rem !important; /* 減少主題卡片之間的間距 */
+        }
+
+        /* 確保卡片內部不被分頁裁切 */
+        .theme-card,
+        .theme-content {
+          page-break-inside: avoid;
+        }
+
+        /* 移除背景色和邊框，節省墨水並避免邊框佔用空間 */
+        body,
+        .intro,
+        .theme-card {
+          background-color: transparent !important;
+          color: #000 !important;
+          border: none !important;
+        }
+
+        .target-card {
+          border: 1px solid #ccc !important; /* 保留一個極細邊框，移除左側粗線 */
+          border-left: none !important;
+          padding: 0.5rem !important;
+        }
+
+        .target-audience {
+          padding: 0.5rem !important;
+          gap: 0.5rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- 調整 span 樣式：移除 font-size 和 font-weight 設置，使其繼承 h1 樣式 -->
+        <h1>
+          《一月煥新》
+          <span
+            style="
+              margin-left: 0.5rem;
+              font-family: 'Noto Sans TC', sans-serif;
+              color: #4a4a4a;
+            "
+          >
+            TSUTAYA BOOKSTORE 1月商品提案策略
+          </span>
+        </h1>
+      </header>
+
+      <section class="meta-info">
+        <h2>企劃主題： 《一月煥新・規劃與獻禮》</h2>
+        <p>
+          <strong>核心概念：</strong> 以「靜心、煥新、獻禮」三大生活提案為主軸。
+        </p>
+        <!-- 新增目標客群總結描述 -->
+        <p>
+          <strong>目標客群：</strong>
+          20-55歲，追求質感生活、注重自我成長與節慶儀式感的廣泛客群。
+        </p>
+      </section>
+
+      <!-- 將客群區塊移動到這裡 -->
+      <section class="target-audience">
+        <div class="target-card">
+          <p
+            style="
+              font-size: 1.1rem;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+              color: #4a4a4a;
+            "
+          >
+            個人客群 (20-40歲)
+          </p>
+          <p style="font-size: 0.9rem">
+            尋求效率管理工具、年度規劃手帳、靜心香氛，以及提升閱讀儀式感的單身客群或個人主義者。
+          </p>
+        </div>
+        <div class="target-card">
+          <p
+            style="
+              font-size: 1.1rem;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+              color: #4a4a4a;
+            "
+          >
+            家庭客群 (30-55歲)
+          </p>
+          <p style="font-size: 0.9rem">
+            具有除舊佈新、準備年節禮品的需求，重視家居美學與親子團聚氛圍的家庭顧客。
+          </p>
+        </div>
+      </section>
+
+      <section class="intro">
+        <!-- 核心概念已分列兩行 -->
+        <p style="text-align: left; margin: 0">
+          一月作為新年度的啟航點，企劃主軸依時序分為前後半月：<br />
+          <span style="font-weight: 700; color: #4a4a4a"
+            >【前半月聚焦內在】</span
+          >：透過書寫與療癒，協助顧客收斂心神、設定年度目標；<br />
+          <span style="font-weight: 700; color: #4a4a4a"
+            >【後半月轉向外在】</span
+          >：提供設計感家飾與節慶贈禮，讓顧客以嶄新面貌迎接農曆新年。
+        </p>
+      </section>
+
+      <main class="themes-grid">
+        <!-- 1. 靜心 Mindfulness / Calmness -->
+        <article class="theme-card">
+          <h3>🧘 1. 靜心｜Mindfulness / Calmness</h3>
+          <div class="theme-content">
+            <p class="strategy">核心策略：專注氛圍</p>
+            <p style="font-size: 0.9rem; margin-bottom: 1.25rem">
+              打造一個適合深度閱讀與高效工作的安靜空間，強調內在的平和與儀式感。
+            </p>
+
+            <h4>具體商品方向：</h4>
+            <ul>
+              <li>
+                療癒香氛：助眠/助專注精油、擴香儀、線香、鎮靜香氛蠟燭
+                (檀香、雪松)。
+              </li>
+              <li>舒適織品：適合室內閱讀的毛毯、眼罩、厚實保暖襪。</li>
+              <li>
+                規劃工具：靜心日誌／感恩筆記本（中性溫潤色調），靜心問句設計。
+              </li>
+              <li>
+                飲品儀式：無咖啡因草本茶（洋甘菊等）、茶具、靜心飲茶儀式指南。
+              </li>
+              <li>
+                體驗套組：靜心角落套組（小型地墊、冥想坐墊、輕音樂QR卡、香氛小燈）。
+              </li>
+              <li>
+                桌上小物：靜心石、陶瓷擴香小物、標語卡（例：「今日只需呼吸」）。
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2. 煥新 Renewal -->
+        <article class="theme-card">
+          <h3>✨ 2. 煥新｜Renewal</h3>
+          <div class="theme-content">
+            <p class="strategy">核心策略：生活設計</p>
+            <p style="font-size: 0.9rem; margin-bottom: 1.25rem">
+              結合「除舊佈新」需求，以設計感、高品質、耐用性高的家居用品，呈現現代美學。
+            </p>
+
+            <h4>具體商品方向：</h4>
+            <ul>
+              <li>
+                餐桌美學：設計款碗盤、木質托盤、簡約桌墊，提升春節團聚質感。
+              </li>
+              <li>家飾點綴：造型花瓶、設計感燈具、藝術微噴掛畫、清新綠植。</li>
+              <li>輕巧機能：兼具收納與美觀的邊桌、置物架等實用家具小物。</li>
+              <!-- 移除 (亮點) -->
+              <li>
+                3C美學升級配件：
+                <ul
+                  style="
+                    padding-left: 1rem;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    margin-top: 0.25rem;
+                  "
+                >
+                  <li>質感無線耳機、迷你藍牙喇叭（木紋／霧面金屬）。</li>
+                  <li>編織快充線、磁吸支架、極簡無線充電盤。</li>
+                  <li>多孔延長線、多功能插座（霧白、淺灰、木紋風格）。</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 3. 獻禮 Gifting -->
+        <article class="theme-card">
+          <h3>🎀 3. 獻禮｜Gifting</h3>
+          <div class="theme-content">
+            <p class="strategy">核心策略：心意與質感</p>
+            <p style="font-size: 0.9rem; margin-bottom: 1.25rem">
+              以「送禮送心意」為核心，提案商品著重於精緻的包裝與產品的獨特價值。
+            </p>
+
+            <h4>具體商品方向：</h4>
+            <ul>
+              <li>
+                年節限定禮盒：設計款咖啡豆/茶葉禮盒、聯名點心禮盒、質感調味禮盒。
+              </li>
+              <li>文創心意：具設計感的紅包袋、賀卡、年節限定款主題書籤。</li>
+              <li>
+                個人保養：高品質護手霜、香氛皂組、新年限定包裝身體保養品。
+              </li>
+            </ul>
+
+            <div
+              style="
+                margin-top: 1.5rem;
+                padding: 0.75rem;
+                border: 1px solid #c8d3dc;
+                background-color: #faf8f3;
+                border-radius: 4px;
+                font-size: 0.9rem;
+              "
+            >
+              <p style="font-weight: 700; margin: 0; color: #4a4a4a">
+                節慶儀式感提醒
+              </p>
+              <p style="margin: 0; font-size: 0.85rem">
+                獻禮策略集中在後半月，應搭配精緻的節慶陳列與包裝服務，強化春節氛圍。
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
